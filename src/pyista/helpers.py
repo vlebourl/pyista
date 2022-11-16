@@ -15,11 +15,6 @@ class Helpers:
     """Helper functions for Ista API."""
 
     @staticmethod
-    def req_headers() -> Dict:
-        """Build header for api requests."""
-        return {}
-
-    @staticmethod
     def call_api(
         url_path: str,
         method: str,
@@ -70,3 +65,6 @@ class Helpers:
             else:
                 logger.debug("Unable to fetch %s%s", API_BASE_URL, url_path)
         return response, status_code
+
+if __name__ == "__main__":
+    pass
